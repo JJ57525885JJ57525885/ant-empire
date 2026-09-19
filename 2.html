@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下载应用 - 小蚁帝国</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px;
+  }
+  .container { max-width: 600px; margin: 0 auto; padding-top: 40px; }
+  .back-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.1); border: none; color: #fff;
+    padding: 10px 18px; border-radius: 20px; font-size: 15px;
+    cursor: pointer; margin-bottom: 30px; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .back-btn:hover { background: rgba(255,255,255,0.2); transform: translateX(-3px); }
+  h1 {
+    text-align: center; font-size: 28px; margin-bottom: 10px;
+    background: linear-gradient(90deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .subtitle { text-align: center; color: rgba(255,255,255,0.6); margin-bottom: 40px; font-size: 14px; }
+  .download-card {
+    display: block; text-decoration: none; color: #fff;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px; padding: 24px; margin-bottom: 16px;
+    transition: all 0.25s; backdrop-filter: blur(10px);
+  }
+  .download-card:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-3px);
+    border-color: rgba(255,215,0,0.4);
+  }
+  .card-icon { font-size: 36px; margin-bottom: 12px; }
+  .card-title { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+  .card-desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+  .card-size {
+    display: inline-block; margin-top: 10px;
+    background: rgba(255,215,0,0.15); color: #ffd700;
+    padding: 3px 10px; border-radius: 10px; font-size: 12px;
+  }
+  .footer { text-align: center; margin-top: 40px; color: rgba(255,255,255,0.4); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-btn">← 返回游戏</a>
+  <h1>📥 下载应用</h1>
+  <p class="subtitle">小蚁帝国 桌面版 & 移动版</p>
+
+  <a class="download-card" href="downloads/小蚁帝国-Setup-1.0.0.exe">
+    <div class="card-icon">🖥️</div>
+    <div class="card-title">Windows 电脑版</div>
+    <div class="card-desc">支持 Windows 7 SP1 / 8 / 10 / 11（64位），安装包含桌面快捷方式与卸载器</div>
+    <span class="card-size">约 68 MB</span>
+  </a>
+
+  <a class="download-card" href="downloads/Ant-Lair-1.0.0.apk">
+    <div class="card-icon">📱</div>
+    <div class="card-title">Android 手机版</div>
+    <div class="card-desc">安卓 APK 安装包，下载后点击安装即可游玩</div>
+    <span class="card-size">约 30 MB</span>
+  </a>
+
+  <a class="download-card" href="downloads/小蚁帝国-1.0.0.AppImage">
+    <div class="card-icon">🐧</div>
+    <div class="card-title">Linux 版</div>
+    <div class="card-desc">AppImage 格式，chmod +x 后直接运行，无需安装</div>
+    <span class="card-size">约 108 MB</span>
+  </a>
+
+  <div class="footer">小蚁帝国 v1.0.0 · 豆包和Ants</div>
+</div>
+</body>
+</html>
